@@ -28,7 +28,7 @@ const GalaxTeaModel = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={galaxTea.scene}
-        scale={isMobile ? 0.0075 : 0.01}
+        scale={isMobile ? 0.007 : 0.01}
         position={isMobile ? [0, -0.5, 0] : [0, -1, 0]}
       />
     </mesh>
@@ -57,7 +57,7 @@ const GalaxTeaCanvas = () => {
       frameloop="always" // Ensure continuous updates for smooth rotation
       shadows
       dpr={[1, 2]}
-      camera={{ position: [5, 2, 5], fov: 30 }}
+      camera={{ position: [5, 1, 5], fov: 30 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

@@ -21,6 +21,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
+import vuejs from "./tech/vuejs.png";
 
 
 import meituan from "./company/meituan.png";
@@ -53,6 +54,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  vuejs,
 
   lg,
   meituan,
