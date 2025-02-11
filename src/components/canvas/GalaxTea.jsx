@@ -1,15 +1,22 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+const GalaxTeaModel = ({ isMobile }) => {
+  const galaxTea = useGLTF("./galax-tea/scene.gltf"); // Load the "Galax-Tea" model
+  const modelRef = useRef(); // Create a reference to the model
+
+  // Rotate the model in each frame update
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.008; 
+    }
+  });
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+    <mesh ref={modelRef}>
+      <hemisphereLight intensity={0.15} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -20,34 +27,26 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        object={galaxTea.scene}
+        scale={isMobile ? 0.0075 : 0.01}
+        position={isMobile ? [0, -0.5, 0] : [0, -1, 0]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const GalaxTeaCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -55,19 +54,19 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="always" // Ensure continuous updates for smooth rotation
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [5, 2, 5], fov: 30 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI}
+          minPolarAngle={0}
         />
-        <Computers isMobile={isMobile} />
+        <GalaxTeaModel isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -75,4 +74,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default GalaxTeaCanvas;
