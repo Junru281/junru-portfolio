@@ -8,21 +8,19 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    python,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    meituan,
+    uw_madison,
+    lg,
     carrent,
     jobit,
     tripguide,
-    threejs,
   } from "../assets";
   
   export const navLinks = [
@@ -33,6 +31,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id:"project",
+      title: "Project",
     },
     {
       id: "contact",
@@ -61,6 +63,18 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -68,22 +82,12 @@ import {
       name: "CSS 3",
       icon: css,
     },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
+    
     {
       name: "TypeScript",
       icon: typescript,
     },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -91,14 +95,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
@@ -116,57 +112,56 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "LG Electronics",
+      icon: lg,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jul 2022 - Aug 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and implemented operational display interface modules using C/C++, validating their performance and stability through over 1000 test cases and debugging processes to ensure high reliability.",
+        "Gained in-depth expertise in On-Screen Display (OSD) and Extended Display Identification Data (EDID) concepts through comprehensive source code analysis.",
+        "Acquired a strong proficiency in display screen production protocols, mastering industry-specific terminology standards.",
+        "Collaborated with cross-functional teams to enhance overall display system integration and performance.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Undergraduate Research Assistant",
+      company_name: "MadAbility Lab",
+      icon: uw_madison,
+      iconBg: "white",
+      date: "Dec 2023 - Aug 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and evaluated an AR navigation system using HoloLens, implementing customizable overlays and instructions to assist low vision users with indoor navigation",
+        "Conducted comprehensive user studies with low vision participants, collecting and analyzing both quantitative and qualitative data through structured testing protocols and a detailed codebook.",
+        "Led iterative system improvements through HCI research methods, including user feedback analysis and continuous design refinements, resulting in enhanced navigation accuracy and user satisfaction",
       ],
     },
+    {
+      title: "Frontend Developer Intern",
+      company_name: "Meituan",
+      icon: meituan,
+      iconBg: "#383E56",
+      date: "Jul 2024 - Sep 2024",
+      points: [
+        "Enhanced SaaS Membership Module: Delivered new features including export alert records and enabling batch/individual modifications of card-issuing stores, resulting in an 80% reduction in processing time.",
+        "Refactored Membership Agreement & Gift Card Store List: Restructured the codebase using Alibaba Formily and Limo frameworks, reducing system complexity by 25% and addressing legacy front-end issues.",
+        "Optimized UI & Form Functionality: Refined the time selector and query parameter backfill, leading to a 40% increase in form completion rates in the membership management system.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      ],
+    },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -198,67 +193,55 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "BadgerChatroom",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based chat application that allow badgers to login, logout, create and delete posts across various chatrooms, providing a convenient and efficient platform for communication inside the college",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Javascript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Postman",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Junru281/BadgerChatroom",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
+      name: "AI-Game-Teeko-Player",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "Python",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Junru281/AI-Game-TeeKo-Player-",
+    },
+    {
+      name: "Interactive Criminal Database Menu",
+      description:
+        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      tags: [
+        {
+          name: "Java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaFX",
+          color: "green-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Junru281/Criminal-Database-Menu",
     },
   ];
   
