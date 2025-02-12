@@ -27,6 +27,8 @@ import kotlin from "./tech/kotlin.png"
 import sql from "./tech/sql.png"
 import c from "./tech/c.png"
 import r from "./tech/r.png"
+import kafka from "./tech/kafka.png";
+import spark from "./tech/apache-spark.png"
 
 
 import meituan from "./company/meituan.png";
@@ -65,6 +67,8 @@ export {
   sql,
   c,
   r,
+  kafka,
+  spark,
 
   lg,
   meituan,

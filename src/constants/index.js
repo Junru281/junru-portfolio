@@ -14,6 +14,8 @@ import {
     sql,
     c,
     r,
+    kafka,
+    spark,
     tailwind,
     nodejs,
     mongodb,
@@ -133,46 +135,51 @@ import {
       category: "Backend",
       icon: kotlin,
     },
-    // {
-    //   name: "C",
-    //   category: "Backend",
-    //   icon: c,
-    // },
-    // {
-    //   name: "R",
-    //   category: "Backend",
-    //   icon: r,
-    // },
-    // {
-    //   name: "JavaScript",
-    //   category: "Frontend",
-    //   icon: javascript,
-    // },
-    // {
-    //   name: "React JS",
-    //   category: "Frontend",
-    //   icon: reactjs,
-    // },
-    // {
-    //   name: "Vue JS",
-    //   category: "Frontend",
-    //   icon: vuejs,
-    // },
-    // {
-    //   name: "TypeScript",
-    //   category: "Frontend",
-    //   icon: typescript,
-    // },
-    // {
-    //   name: "HTML 5",
-    //   category: "Frontend",
-    //   icon: html,
-    // },
-    // {
-    //   name: "CSS 3",
-    //   category: "Frontend",
-    //   icon: css,
-    // },
+    {
+      name: "SQL",
+      category: "Backend",
+      icon: sql,
+    },
+    {
+      name: "C",
+      category: "Backend",
+      icon: c,
+    },
+    {
+      name: "R",
+      category: "Backend",
+      icon: r,
+    },
+    {
+      name: "JavaScript",
+      category: "Frontend",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      category: "Frontend",
+      icon: reactjs,
+    },
+    {
+      name: "Vue JS",
+      category: "Frontend",
+      icon: vuejs,
+    },
+    {
+      name: "TypeScript",
+      category: "Frontend",
+      icon: typescript,
+    },
+    {
+      name: "HTML 5",
+      category: "Frontend",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      category: "Frontend",
+      icon: css,
+    },
     // {
     //   name: "Tailwind CSS",
     //   category: "Frontend",
@@ -192,6 +199,16 @@ import {
       name: "Docker",
       category: "DevOps",
       icon: docker,
+    },
+    {
+      name: "Spark",
+      category: "Big Data Processing Framework",
+      icon: spark,
+    },
+    {
+      name: "Kafka",
+      category: "Big Data Processing Framework",
+      icon: kafka,
     },
     
   ];
