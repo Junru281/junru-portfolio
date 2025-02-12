@@ -69,56 +69,6 @@ import {
     // },
   ];
   
-  // const technologies = [
-  //   {
-  //     name: "Python",
-  //     icon: python,
-  //   },
-  //   {
-  //     name: "JavaScript",
-  //     icon: javascript,
-  //   },
-  //   {
-  //     name: "React JS",
-  //     icon: reactjs,
-  //   },
-  //   {
-  //     name: "HTML 5",
-  //     icon: html,
-  //   },
-  //   {
-  //     name: "CSS 3",
-  //     icon: css,
-  //   },
-    
-  //   {
-  //     name: "TypeScript",
-  //     icon: typescript,
-  //   },
-    
-  //   {
-  //     name: "Tailwind CSS",
-  //     icon: tailwind,
-  //   },
-  //   {
-  //     name: "Node JS",
-  //     icon: nodejs,
-  //   },
-  //   {
-  //     name: "git",
-  //     icon: git,
-  //   },
-  //   {
-  //     name: "figma",
-  //     icon: figma,
-  //   },
-  //   {
-  //     name: "docker",
-  //     icon: docker,
-  //   },
-    
-  // ];
-
   const technologies = [
     {
       name: "Python",
@@ -140,11 +90,11 @@ import {
       category: "Backend",
       icon: sql,
     },
-    {
-      name: "C",
-      category: "Backend",
-      icon: c,
-    },
+    // {
+    //   name: "C",
+    //   category: "Backend",
+    //   icon: c,
+    // },
     {
       name: "R",
       category: "Backend",
@@ -165,11 +115,11 @@ import {
       category: "Frontend",
       icon: vuejs,
     },
-    {
-      name: "TypeScript",
-      category: "Frontend",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   category: "Frontend",
+    //   icon: typescript,
+    // },
     {
       name: "HTML 5",
       category: "Frontend",
@@ -298,7 +248,7 @@ import {
     {
       name: "BadgerChatroom",
       description:
-        "Web-based chat application that allow badgers to login, logout, create and delete posts across various chatrooms, providing a convenient and efficient platform for communication inside the college",
+        "A web-based chatboard that allow badgers to login, logout, create and delete posts across various chatrooms, providing a convenient and efficient platform for communication inside the college.",
       tags: [
         {
           name: "React.js",
@@ -319,7 +269,7 @@ import {
     {
       name: "AI-Game-Teeko-Player",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        'An AI opponent named "Samaritan" employs the Minimax algorithm to evaluate potential moves, offering users a challenging and strategic gameplay experience in the game of Teeko. ',
       tags: [
         {
           name: "Python",
@@ -332,7 +282,7 @@ import {
     {
       name: "Interactive Criminal Database Menu",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A straightforward menu-driven interface for managing criminal records, featuring functionalities such as data loading, search capabilities, graphical poster generation, analytics presentation, and fraud detection. ",
       tags: [
         {
           name: "Java",
