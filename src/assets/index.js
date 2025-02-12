@@ -22,6 +22,11 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import vuejs from "./tech/vuejs.png";
+import java from './tech/java.png'
+import kotlin from "./tech/kotlin.png"
+import sql from "./tech/sql.png"
+import c from "./tech/c.png"
+import r from "./tech/r.png"
 
 
 import meituan from "./company/meituan.png";
@@ -55,6 +60,11 @@ export {
   typescript,
   threejs,
   vuejs,
+  java,
+  kotlin,
+  sql,
+  c,
+  r,
 
   lg,
   meituan,

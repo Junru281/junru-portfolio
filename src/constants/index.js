@@ -9,6 +9,11 @@ import {
     css,
     reactjs,
     python,
+    java,
+    kotlin,
+    sql,
+    c,
+    r,
     tailwind,
     nodejs,
     mongodb,
@@ -21,6 +26,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    vuejs,
   } from "../assets";
   
   export const navLinks = [
@@ -61,53 +67,133 @@ import {
     // },
   ];
   
+  // const technologies = [
+  //   {
+  //     name: "Python",
+  //     icon: python,
+  //   },
+  //   {
+  //     name: "JavaScript",
+  //     icon: javascript,
+  //   },
+  //   {
+  //     name: "React JS",
+  //     icon: reactjs,
+  //   },
+  //   {
+  //     name: "HTML 5",
+  //     icon: html,
+  //   },
+  //   {
+  //     name: "CSS 3",
+  //     icon: css,
+  //   },
+    
+  //   {
+  //     name: "TypeScript",
+  //     icon: typescript,
+  //   },
+    
+  //   {
+  //     name: "Tailwind CSS",
+  //     icon: tailwind,
+  //   },
+  //   {
+  //     name: "Node JS",
+  //     icon: nodejs,
+  //   },
+  //   {
+  //     name: "git",
+  //     icon: git,
+  //   },
+  //   {
+  //     name: "figma",
+  //     icon: figma,
+  //   },
+  //   {
+  //     name: "docker",
+  //     icon: docker,
+  //   },
+    
+  // ];
+
   const technologies = [
     {
       name: "Python",
+      category: "Backend",
       icon: python,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "Java",
+      category: "Backend",
+      icon: java,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Kotlin",
+      category: "Backend",
+      icon: kotlin,
     },
+    // {
+    //   name: "C",
+    //   category: "Backend",
+    //   icon: c,
+    // },
+    // {
+    //   name: "R",
+    //   category: "Backend",
+    //   icon: r,
+    // },
+    // {
+    //   name: "JavaScript",
+    //   category: "Frontend",
+    //   icon: javascript,
+    // },
+    // {
+    //   name: "React JS",
+    //   category: "Frontend",
+    //   icon: reactjs,
+    // },
+    // {
+    //   name: "Vue JS",
+    //   category: "Frontend",
+    //   icon: vuejs,
+    // },
+    // {
+    //   name: "TypeScript",
+    //   category: "Frontend",
+    //   icon: typescript,
+    // },
+    // {
+    //   name: "HTML 5",
+    //   category: "Frontend",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS 3",
+    //   category: "Frontend",
+    //   icon: css,
+    // },
+    // {
+    //   name: "Tailwind CSS",
+    //   category: "Frontend",
+    //   icon: tailwind,
+    // },
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "git",
+      name: "Git",
+      category: "DevOps",
       icon: git,
     },
     {
-      name: "figma",
+      name: "Figma",
+      category: "DevOps",
       icon: figma,
     },
     {
-      name: "docker",
+      name: "Docker",
+      category: "DevOps",
       icon: docker,
     },
+    
   ];
   
   const experiences = [
