@@ -33,7 +33,9 @@ import spark from "./tech/apache-spark.png"
 
 import meituan from "./company/meituan.png";
 import uw_madison from "./company/uw_madison.png";
+import uw_madison_1 from "./company/uw_madison_1.png";
 import lg from "./company/lg.png";
+import xjtlu from "./company/xjtlu.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -73,6 +75,8 @@ export {
   lg,
   meituan,
   uw_madison,
+  uw_madison_1,
+  xjtlu,
 
   carrent,
   jobit,

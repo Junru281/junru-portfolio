@@ -23,12 +23,12 @@ import {
     figma,
     docker,
     meituan,
-    uw_madison,
     lg,
     carrent,
     jobit,
     tripguide,
     vuejs,
+    uw_madison_1,
   } from "../assets";
   import { styles } from "../styles";
   
@@ -36,6 +36,10 @@ import {
     {
       id: "about",
       title: "About",
+    },
+    {
+      id: "education",
+      title: "Education",
     },
     {
       id: "work",
@@ -187,7 +191,7 @@ import {
     {
       title: "Undergraduate Research Assistant",
       company_name: "MadAbility Lab",
-      icon: uw_madison,
+      icon: uw_madison_1,
       iconBg: "white",
       date: "Dec 2023 - Aug 2024",
       points: [
