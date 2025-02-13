@@ -20,7 +20,7 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]">
-        I'm an <span className='text-[#915eff] font-semibold'>upcoming CS graduate</span> from the <span className='text-[#915eff] font-semibold'>University of Wisconsin-Madison</span> ,
+        I'm an <span className={`${styles.highlightText}`}> upcoming CS graduate</span> from the <span className={`${styles.highlightText}`}> University of Wisconsin-Madison</span> ,
         with a passion for software development and a strong foundation in
         computer science principles. 
       </motion.p>
@@ -28,7 +28,7 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]">
-        My experience includes both <span className='text-[#915eff] font-semibold'>frontend</span> and <span className='text-[#915eff] font-semibold'>backend</span> development, and I am eager to contribute my skills to innovative projects and collaborate with talented teams.
+        My experience includes both <span className={`${styles.highlightText}`}> frontend</span> and <span className={`${styles.highlightText}`}> backend</span> development, and I am eager to contribute my skills to innovative projects and collaborate with talented teams.
       </motion.p>
       
       <motion.p
@@ -79,7 +79,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      <div className="mt-10 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service) => (
           <Tilt className="xs:w-[250px] w-full" key={service.title}>
             <motion.div

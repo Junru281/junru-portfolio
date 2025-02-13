@@ -30,6 +30,7 @@ import {
     tripguide,
     vuejs,
   } from "../assets";
+  import { styles } from "../styles";
   
   export const navLinks = [
     {
@@ -171,8 +172,14 @@ import {
       iconBg: "#383E56",
       date: "Jul 2022 - Aug 2022",
       points: [
-        "Developed and implemented operational display interface modules using C/C++, validating their performance and stability through over 1000 test cases and debugging processes to ensure high reliability.",
-        "Gained in-depth expertise in On-Screen Display (OSD) and Extended Display Identification Data (EDID) concepts through comprehensive source code analysis.",
+        <>
+        Developed and implemented operational display interface modules using C/C++, 
+        validating their performance and stability through 
+        <span className={`${styles.highlightText}`}> over 1000 test cases </span> and debugging processes to ensure high reliability.
+        </>,
+        <>
+          Gained in-depth expertise in <span className={`${styles.highlightText}`}> On-Screen Display (OSD) </span> and <span className={`${styles.highlightText}`}> Extended Display Identification Data (EDID)</span> concepts through comprehensive source code analysis.
+        </>,
         "Acquired a strong proficiency in display screen production protocols, mastering industry-specific terminology standards.",
         "Collaborated with cross-functional teams to enhance overall display system integration and performance.",
       ],
@@ -184,8 +191,13 @@ import {
       iconBg: "white",
       date: "Dec 2023 - Aug 2024",
       points: [
-        "Developed and evaluated an AR navigation system using HoloLens, implementing customizable overlays and instructions to assist low vision users with indoor navigation",
-        "Conducted comprehensive user studies with low vision participants, collecting and analyzing both quantitative and qualitative data through structured testing protocols and a detailed codebook.",
+        <>
+          Developed and evaluated <span className={`${styles.highlightText}`}>an AR navigation system</span> using <span className={`${styles.highlightText}`}>HoloLens</span>,
+          implementing customizable overlays and instructions to assist<span className={`${styles.highlightText}`}> low vision users</span> with <span className={`${styles.highlightText}`}>indoor navigation</span>
+        </>,
+        <>
+          Conducted <span className={`${styles.highlightText}`}>comprehensive user studies</span> with low vision participants, collecting and analyzing both <span className={`${styles.highlightText}`}>quantitative</span> and <span className={`${styles.highlightText}`}>qualitative</span> data through structured testing protocols and a detailed codebook.
+        </>,
         "Led iterative system improvements through HCI research methods, including user feedback analysis and continuous design refinements, resulting in enhanced navigation accuracy and user satisfaction",
       ],
     },
@@ -196,10 +208,18 @@ import {
       iconBg: "#383E56",
       date: "Jul 2024 - Sep 2024",
       points: [
-        "Enhanced SaaS Membership Module: Delivered new features including export alert records and enabling batch/individual modifications of card-issuing stores, resulting in an 80% reduction in processing time.",
-        "Refactored Membership Agreement & Gift Card Store List: Restructured the codebase using Alibaba Formily and Limo frameworks, reducing system complexity by 25% and addressing legacy front-end issues.",
-        "Optimized UI & Form Functionality: Refined the time selector and query parameter backfill, leading to a 40% increase in form completion rates in the membership management system.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        <>
+          <span className="font-bold">Delivered new features</span> for <span className={`${styles.highlightText}`}>SaaS Membership Module</span> including export alert records and enabling batch/individual modifications of card-issuing stores, resulting in an<span className={`${styles.highlightText}`}> 80% reduction</span> in processing time.
+        </>,
+        <>
+          <span className="font-bold">Restructured the codebase</span> using <span className={`${styles.highlightText}`}>Alibaba Formily</span> and <span className={`${styles.highlightText}`}>Limo</span> frameworks for Membership Agreement & Gift Card Store List pages, <span className={`${styles.highlightText}`}>reducing system complexity by 25%</span> and addressing legacy front-end issues.
+        </>,
+        <>
+          <span className="font-bold">Optimized Form UI and functionality </span> such as the time selector and <span className={`${styles.highlightText}`}>the query parameter backfill process</span>, leading to a <span className={`${styles.highlightText}`}>40% increase</span> in form completion rates.
+        </>,
+        <>
+          <span className="font-bold">Collaborated with cross-functional teams</span> including designers, product managers, and other developers to create high-quality products.
+        </>,
       ],
     },
     // {
@@ -248,7 +268,9 @@ import {
     {
       name: "BadgerChatroom",
       description:
-        "A web-based chatboard that allow badgers to login, logout, create and delete posts across various chatrooms, providing a convenient and efficient platform for communication inside the college.",
+        <>
+          A <span className={`${styles.highlightText}`}>web-based chatboard</span> that allow badgers to <span className={`${styles.highlightText}`}>login</span>, <span className={`${styles.highlightText}`}>logout</span>, <span className={`${styles.highlightText}`}>create</span> and <span className={`${styles.highlightText}`}>delete posts</span>  across various chatrooms, providing a convenient and efficient platform for communication inside the college.
+        </>,
       tags: [
         {
           name: "React.js",
@@ -269,7 +291,9 @@ import {
     {
       name: "AI-Game-Teeko-Player",
       description:
-        'An AI opponent named "Samaritan" employs the Minimax algorithm to evaluate potential moves, offering users a challenging and strategic gameplay experience in the game of Teeko. ',
+        <>
+          An AI opponent named <span className={`${styles.highlightText}`}>Samaritan</span> employs the <span className={`${styles.highlightText}`}>Minimax</span> algorithm to evaluate potential moves, offering users a challenging and strategic gameplay experience in the game of <span className={`${styles.highlightText}`}>Teeko</span>.
+        </>,
       tags: [
         {
           name: "Python",
@@ -282,7 +306,9 @@ import {
     {
       name: "Interactive Criminal Database Menu",
       description:
-        "A straightforward menu-driven interface for managing criminal records, featuring functionalities such as data loading, search capabilities, graphical poster generation, analytics presentation, and fraud detection. ",
+        <>
+          A straightforward <span className={`${styles.highlightText}`}>menu-driven interface</span> for managing criminal records, featuring functionalities such as data loading, <span className={`${styles.highlightText}`}>search </span>capabilities, <span className={`${styles.highlightText}`}> dynamic poster </span>generation, <span className={`${styles.highlightText}`}>analytics </span>presentation, and <span className={`${styles.highlightText}`}>fraud detection</span>.
+        </>,
       tags: [
         {
           name: "Java",
