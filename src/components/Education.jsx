@@ -63,6 +63,11 @@ const Education = () => {
               className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
             >
               <div
+                options={{
+                  max: 45,
+                  scale: 1,
+                  speed: 250,
+                }}
                 className="bg-tertiary rounded-[20px] py-6 px-8 min-h-[360px] flex flex-row items-center"
               >
                 

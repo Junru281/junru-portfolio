@@ -1,13 +1,12 @@
 import React from 'react'
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaGithub, FaLinkedin} from 'react-icons/fa6'; // Updated Twitter Icon
 import { MdDescription } from 'react-icons/md'; // Document Icon
 
 import { styles } from '../styles'
-import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import PhotoCarousel from './PhotoCarousel';
 
 const About = () => {
   return (
@@ -78,7 +77,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service) => (
           <Tilt className="xs:w-[250px] w-full" key={service.title}>
             <motion.div
@@ -105,7 +104,10 @@ const About = () => {
             </motion.div>
           </Tilt>
         ))}
-      </div>
+      </div> */}
+      
+      <PhotoCarousel/>
+
     </>
   );
 }

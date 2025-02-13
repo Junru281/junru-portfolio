@@ -41,6 +41,19 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import cake from "./daily_lifes/cake.jpg";
+import flower from "./daily_lifes/Flowers.png";
+import fog from "./daily_lifes/fog.png";
+import forget_me_not from "./daily_lifes/forget-me-not.jpg";
+import gidle from "./daily_lifes/gidle.jpg";
+import magnet from "./daily_lifes/magnet.jpg";
+import ny_1 from "./daily_lifes/ny_1.jpg";
+import pangzi_1 from "./daily_lifes/pangzi_1.jpg";
+import selfie_1 from "./daily_lifes/selfie_1.jpg";
+import star from "./daily_lifes/star.png";
+import sunset from "./daily_lifes/sunset.jpg";
+import uw_football_2 from "./daily_lifes/uw_football_2.jpg";
+
 export {
   logo,
   backend,
@@ -82,4 +95,18 @@ export {
   jobit,
   tripguide,
   python,
+
+
+  cake,
+  flower,
+  fog,
+  forget_me_not,
+  gidle,
+  magnet,
+  pangzi_1,
+  ny_1,
+  selfie_1,
+  sunset,
+  star,
+  uw_football_2,
 };
