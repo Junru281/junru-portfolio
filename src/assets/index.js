@@ -37,9 +37,9 @@ import uw_madison_1 from "./company/uw_madison_1.png";
 import lg from "./company/lg.png";
 import xjtlu from "./company/xjtlu.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import AI_Teeko from "./AI-Teeko.png";
+import badgerChatroom from "./badgerChatroom.png";
+import criminalDatabase from "./criminal-Menu.jpg";
 
 import cake from "./daily_lifes/cake.jpg";
 import flower from "./daily_lifes/Flowers.png";
@@ -77,6 +77,7 @@ export {
   typescript,
   threejs,
   vuejs,
+  python,
   java,
   kotlin,
   sql,
@@ -85,17 +86,16 @@ export {
   kafka,
   spark,
 
+
   lg,
   meituan,
   uw_madison,
   uw_madison_1,
   xjtlu,
 
-  carrent,
-  jobit,
-  tripguide,
-  python,
-
+  AI_Teeko,
+  badgerChatroom,
+  criminalDatabase,
 
   cake,
   flower,

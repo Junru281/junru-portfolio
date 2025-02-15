@@ -24,9 +24,9 @@ import {
     docker,
     meituan,
     lg,
-    carrent,
-    jobit,
-    tripguide,
+    AI_Teeko,
+    badgerChatroom,
+    criminalDatabase,
     vuejs,
     uw_madison_1,
   } from "../assets";
@@ -289,7 +289,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: badgerChatroom,
       source_code_link: "https://github.com/Junru281/BadgerChatroom",
     },
     {
@@ -304,7 +304,7 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: tripguide,
+      image: AI_Teeko,
       source_code_link: "https://github.com/Junru281/AI-Game-TeeKo-Player-",
     },
     {
@@ -323,7 +323,7 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: jobit,
+      image: criminalDatabase,
       source_code_link: "https://github.com/Junru281/Criminal-Database-Menu",
     },
   ];
