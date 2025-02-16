@@ -34,7 +34,7 @@ import spark from "./tech/apache-spark.png"
 import meituan from "./company/meituan.png";
 import uw_madison from "./company/uw_madison.png";
 import uw_madison_1 from "./company/uw_madison_1.png";
-import lg from "./company/lg.png";
+import lg from "./company/Lg.png";
 import xjtlu from "./company/xjtlu.png"
 
 import AI_Teeko from "./AI-Teeko.png";
