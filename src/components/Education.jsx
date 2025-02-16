@@ -71,7 +71,7 @@ const Education = () => {
                 className="bg-tertiary rounded-[20px] py-6 px-8 min-h-[360px] flex flex-row items-center"
               >
                 
-              <img src={edu.icon} alt={edu.school} className="w-24 h-24 object-contain rounded-md mr-6 shadow-lg bg-white" />
+              <img src={edu.icon} alt={edu.school} className="w-[13%] h-[17%] min-w-[50px] min-h-[80px] object-contain rounded-md mr-6 shadow-lg bg-white" />
 
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-white">{edu.school}</h3>
