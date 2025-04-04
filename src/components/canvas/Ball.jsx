@@ -49,25 +49,44 @@
 // export default BallCanvas
 
 // To Resolve the issue of WeGL lost
-import React, { Suspense, useState, useEffect } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useState, useEffect, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Ball = ({ tech, position, onHover, isMobile }) => {
   const [decal] = useTexture([tech.icon]);
+  const meshRef = useRef();
+  const [hovered, setHovered] = useState(false);
+
+  useFrame(({ clock }) => {
+    if (meshRef.current) {
+      const t = clock.getElapsedTime();
+      const floatY = hovered ? Math.sin(t * 2) * 0.3 : 0;
+      // 使用 set directly 但基于原始 position
+      meshRef.current.position.set(position[0], position[1] + floatY, position[2]);
+    }
+  });
+
   return (
-    <Float speed={1} rotationIntensity={1} floatIntensity={2}>
+    <>
       <ambientLight intensity={1.2} />
       <directionalLight position={[0, 0, 0.5]} />
       <mesh
+        ref={meshRef}
         castShadow
         receiveShadow
         // Scale is smaller on mobile
         scale={isMobile ? 0.9 : 1.2}
         position={position}
-        onPointerOver={() => onHover(tech.name)}
-        onPointerOut={() => onHover(null)}
+        onPointerOver={() => {
+          onHover(tech.name)
+          setHovered(true);
+        }}
+        onPointerOut={() => {
+          onHover(null)
+          setHovered(false);
+        }}
       >
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
@@ -83,7 +102,7 @@ const Ball = ({ tech, position, onHover, isMobile }) => {
           map={decal}
         />
       </mesh>
-    </Float>
+    </>
   );
 };
 
@@ -121,10 +140,9 @@ const BallCanvas = ({ techs, onHover }) => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       gl={{ preserveDrawingBuffer: true }}
-      orthographic
-      camera={{ zoom: isMobile ? 41 : 50, position: [0, 0, 100] }}
+      camera={{ zoom: isMobile ? 41 : 50, position: [0, 0, 125] }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
